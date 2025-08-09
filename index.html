@@ -3,29 +3,586 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dentotec - GaMa-R®</title>
-    
-    <!-- Link para o favicon -->
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
-    
-    <!-- Outras meta tags e links -->
-    <meta name="description" content="GaMa-R® medidor de tempo de exposição de RX periapical - Dentotec">
-    
-    <!-- O restante do seu código head -->
+    <title>GaMa-R - Medidor de Tempo de Exposição para RX Odontológicos</title>
+    <meta name="description" content="GaMa-R - Medidor profissional de tempo de exposição para raios-X odontológicos. Precisão, portabilidade e tecnologia nacional para técnicos especializados.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1 class="logo">
+                    <span class="logo-main">GaMa-R</span>
+                    <span class="logo-sub">timer meter</span>
+                </h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#produto" class="nav-link">Produto</a></li>
+                <li><a href="#specs" class="nav-link">Especificações</a></li>
+                <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <h1 style="color: #5e9ca0;">Dentotec</h1>
-    <h2 style="color: #2e6c80;">GaMa-R® medidor de tempo de exposição para RX periapical</h2>
-    <p>Agora você pode garantir o seu GaMa-R® Lite na pré-venda! Acesse o link a seguir para realizar sua compra:</p>
-    <p><a href="https://encurtador.com.br/ETWB2" target="_blank">Clique aqui para acessar a pré-venda do GaMa-R®</a></p>
-    <p>Além disso, o manual do aparelho será postado no nosso repositório do GitHub. Fique ligado!</p>
-    <p><a href="https://github.com/seu-repositorio" target="_blank">Acesse o manual do GaMa-R® no GitHub</a></p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="tech-grid"></div>
+            <div class="floating-elements">
+                <div class="float-element" style="--delay: 0s; --duration: 8s;"></div>
+                <div class="float-element" style="--delay: 2s; --duration: 12s;"></div>
+                <div class="float-element" style="--delay: 4s; --duration: 10s;"></div>
+                <div class="float-element" style="--delay: 6s; --duration: 14s;"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <i class="fas fa-radiation"></i>
+                    <span>Tecnologia Nacional</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-main">GaMa-R</span>
+                    <span class="title-sub">Medidor de Tempo de Exposição</span>
+                    <span class="title-desc">para RX Odontológicos</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Precisão profissional para técnicos de manutenção e físicos especializados em laudos de constância
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">&lt;1%</span>
+                            <span class="stat-label">Precisão</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">200ms-3s</span>
+                            <span class="stat-label">Faixa</span>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-battery-three-quarters"></i>
+                        </div>
+                        <div class="stat-content">
+                            <span class="stat-number">6 meses</span>
+                            <span class="stat-label">Bateria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Solicitar Orçamento
+                    </a>
+                    <a href="#produto" class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="product-showcase">
+                    <div class="product-glow"></div>
+                    <img src="20250318_120145.jpg" alt="GaMa-R Medidor de Tempo" class="product-image">
+                    <div class="tech-overlay">
+                        <div class="scan-line"></div>
+                        <div class="data-points">
+                            <div class="data-point" style="top: 20%; left: 15%;">
+                                <div class="point"></div>
+                                <div class="label">LCD Display</div>
+                            </div>
+                            <div class="data-point" style="top: 60%; left: 80%;">
+                                <div class="point"></div>
+                                <div class="label">LED Indicator</div>
+                            </div>
+                            <div class="data-point" style="bottom: 20%; left: 50%;">
+                                <div class="point"></div>
+                                <div class="label">RX Symbol</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-highlight">
+                    <div class="price-badge">
+                        <span class="price-label">6x mais barato</span>
+                        <span class="price-desc">que importados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Product Section -->
+    <section id="produto" class="product-section">
+        <div class="section-bg">
+            <div class="circuit-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Produto</span>
+                <h2 class="section-title">Tecnologia de Precisão</h2>
+                <p class="section-subtitle">Instrumento profissional para medição de tempo de exposição de aparelhos de Raios-X odontológicos</p>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Medição Direta</h3>
+                    <p>Medição direta da emissão do cabeçote do RX com precisão profissional para laudos de constância.</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Interface Intuitiva</h3>
+                    <p>Display LCD iluminado, LED bi-color, buzzer sonoro e controles ergonômicos para facilidade de uso.</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Uso Profissional</h3>
+                    <p>Projetado para técnicos de manutenção e empresas especializadas em laudos técnicos.</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Construção Robusta</h3>
+                    <p>Caixa de plástico ABS injetado sob alta pressão, garantindo durabilidade e resistência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specifications Section -->
+    <section id="specs" class="specs-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Especificações</span>
+                <h2 class="section-title">Características Técnicas</h2>
+                <p class="section-subtitle">Especificações detalhadas do medidor GaMa-R</p>
+            </div>
+            
+            <div class="specs-container">
+                <div class="specs-visual">
+                    <img src="20250318_185654.jpg" alt="Display GaMa-R" class="specs-image">
+                    <div class="specs-overlay">
+                        <div class="spec-highlight" style="top: 30%; left: 20%;">
+                            <div class="highlight-dot"></div>
+                            <div class="highlight-label">Display LCD</div>
+                        </div>
+                        <div class="spec-highlight" style="top: 70%; left: 15%;">
+                            <div class="highlight-dot"></div>
+                            <div class="highlight-label">LED Status</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-stopwatch"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Faixa de Medição</h4>
+                            <span class="spec-value">200ms → 3000ms</span>
+                            <p>Ampla faixa para diferentes tipos de exposição</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Precisão</h4>
+                            <span class="spec-value">&lt; 1%</span>
+                            <p>Alta precisão para medições profissionais</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Alimentação</h4>
+                            <span class="spec-value">Bateria 9V</span>
+                            <p>6 meses de uso normal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h4>Display</h4>
+                            <span class="spec-value">LCD Iluminado</span>
+                            <p>Visor claro com informações detalhadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Status Indicators -->
+            <div class="indicators-panel">
+                <h3>Sistema de Indicadores</h3>
+                <div class="indicators-grid">
+                    <div class="indicator-item">
+                        <div class="led-status off"></div>
+                        <span>Desligado - Aguardando inicialização</span>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="led-status green"></div>
+                        <span>Verde - Pronto para uso (stand-by)</span>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="led-status red"></div>
+                        <span>Vermelho - Medindo radiação</span>
+                    </div>
+                    <div class="indicator-item">
+                        <div class="led-status red-blink"></div>
+                        <span>Vermelho intermitente - Alarme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Galeria</span>
+                <h2 class="section-title">Conheça o GaMa-R</h2>
+                <p class="section-subtitle">Imagens e vídeos demonstrativos do produto</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="images">
+                    <img src="20250318_120145.jpg" alt="GaMa-R vista frontal">
+                    <div class="gallery-overlay">
+                        <h4>Vista Frontal</h4>
+                        <p>Design compacto e profissional</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="posicionamento_uso.png" alt="GaMa-R posicionado com cabeçote de RX">
+                    <div class="gallery-overlay">
+                        <h4>Posicionamento de Uso</h4>
+                        <p>GaMa-R posicionado corretamente com cabeçote de RX odontológico</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="20250318_185654.jpg" alt="Display aguardando disparo">
+                    <div class="gallery-overlay">
+                        <h4>Display LCD</h4>
+                        <p>Interface clara e intuitiva</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="20250318_185942(1).jpg" alt="Modo de teste">
+                    <div class="gallery-overlay">
+                        <h4>Modo de Teste</h4>
+                        <p>Informações técnicas detalhadas</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="images">
+                    <img src="20250318_184321(1).jpg" alt="Indicador de bateria">
+                    <div class="gallery-overlay">
+                        <h4>Status da Bateria</h4>
+                        <p>Avisos claros sobre o status</p>
+                        <button class="view-btn"><i class="fas fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="video-showcase">
+                <h3>Vídeos Demonstrativos</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="20250318_114248.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+                        <h4>Demonstração de Uso</h4>
+                        <p>Veja o GaMa-R em funcionamento</p>
+                    </div>
+                    
+                    <div class="video-item">
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="20250309_212412.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+                        <h4>Funcionamento Detalhado</h4>
+                        <p>Análise completa das funcionalidades</p>
+                    </div>
+                    
+                    <div class="video-item">
+                        <div class="video-container">
+                            <video controls preload="metadata">
+                                <source src="20250326_114037.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+                        <h4>Demonstração Prática</h4>
+                        <p>Aplicação em ambiente real</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="pricing-bg">
+            <div class="price-particles"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag light">Vantagens</span>
+                <h2 class="section-title light">Tecnologia Nacional</h2>
+                <p class="section-subtitle light">Qualidade superior com preço competitivo</p>
+            </div>
+            
+            <div class="pricing-card">
+                <div class="price-header">
+                    <h3>GaMa-R</h3>
+                    <div class="price-display">
+                        <span class="highlight-text">Consulte condições especiais</span>
+                    </div>
+                </div>
+                
+                <div class="price-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>6x mais barato que concorrentes importados</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Produção sob encomenda</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Tecnologia 100% nacional</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Suporte técnico especializado</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check"></i>
+                        <span>Manual completo em português</span>
+                    </div>
+                </div>
+                
+                <div class="price-cta">
+                    <a href="#contato" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contato</span>
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Solicite seu orçamento ou tire suas dúvidas</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="company-card">
+                        <h3>Dentotec Assistência Técnica</h3>
+                        <p>Especializada em equipamentos odontomédicos</p>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <strong>E-mail</strong>
+                                    <a href="mailto:dentotec.gama.r@gmail.com">dentotec.gama.r@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <strong>Telefone</strong>
+                                    <a href="tel:+5548984320495">(48) 98432-0495</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <strong>Facebook</strong>
+                                    <a href="https://www.facebook.com/Dentotec" target="_blank">www.facebook.com/Dentotec</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Empresa/Instituição</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecione um assunto</option>
+                                <option value="orcamento">Solicitar Orçamento</option>
+                                <option value="informacoes">Informações Técnicas</option>
+                                <option value="suporte">Suporte Técnico</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-pattern"></div>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>GaMa-R</h3>
+                    <p>Medidor de Tempo de Exposição para RX Odontológicos</p>
+                    <p>Tecnologia nacional de precisão</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/Dentotec" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#produto">Produto</a></li>
+                        <li><a href="#specs">Especificações</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>dentotec.gama.r@gmail.com</p>
+                    <p>(48) 98432-0495</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dentotec Assistência Técnica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
